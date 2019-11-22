@@ -1,11 +1,24 @@
 package execicio1;
 
-import java.io.ObjectInputStream.GetField;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class Log {
-
+public class LogSingleton {
+	private static LogSingleton instance;
+	private LogSingleton() {
+		
+	}
+	
+	public static LogSingleton getInstance() {
+		
+		if (instance == null) {
+			instance = new LogSingleton();
+		}
+		
+		return instance;
+		
+	}
+	
 	private Collection<String> textos;
 
 		public Collection<String> getTextos() {
@@ -17,16 +30,15 @@ public class Log {
 	
 	public static void main(String[] args) {
 		
-		Log log = new Log();
+		LogSingleton log = LogSingleton.getInstance();
 		log.setTextos(new ArrayList<String>());
 		
 		log.getTextos().add("Log1");
 		log.getTextos().add("Log2");
 		log.getTextos().add("Log3");
 		
-		Log log2 = new Log();
-		log2.setTextos(new ArrayList<String>());
-		
+		LogSingleton log2 = LogSingleton.getInstance();
+				
 		log2.getTextos().add("Log4");
 		log2.getTextos().add("Log5");
 		log2.getTextos().add("Log6");

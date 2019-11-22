@@ -5,5 +5,6 @@ public enum Comodidade {
 	PISCINA,
 	CINEMA,
 	ACADEMIA
+	
 
 }

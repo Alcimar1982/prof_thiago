@@ -17,5 +17,6 @@ public class Hospede {
 	private int identidade;
 
 	private Date data nascimento;
+	
 
 }

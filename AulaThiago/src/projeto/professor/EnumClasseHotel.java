@@ -5,4 +5,3 @@ public enum EnumClasseHotel {
 	CLASSIC,
 	APART
 }
-

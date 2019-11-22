@@ -6,5 +6,4 @@ public enum Comodidade {
 	CINEMA,
 	ACADEMIA
 	
-
 }

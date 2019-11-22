@@ -14,5 +14,4 @@ public class Reserva {
 
 	private Long observacao;
 
-	
 }

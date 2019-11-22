@@ -5,3 +5,4 @@ public class Tipo {
 	private String descricao;
 
 }
+

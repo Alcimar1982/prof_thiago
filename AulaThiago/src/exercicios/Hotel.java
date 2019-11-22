@@ -7,7 +7,8 @@ public class Hotel {
 	public Hotel(Collection<Comodidade> comodidade) {
 		super();
 		this.comodidade = comodidade;
-			}
+		
+	}
 
 		public Collection<Comodidade> getComodidade() {
 			return comodidade;

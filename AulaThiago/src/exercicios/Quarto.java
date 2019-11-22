@@ -13,3 +13,4 @@ public class Quarto {
 	private Float diaria;
 
 }
+

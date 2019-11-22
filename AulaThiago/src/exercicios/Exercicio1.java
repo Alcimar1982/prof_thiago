@@ -6,6 +6,7 @@ public class Exercicio1 {
 		// TODO Auto-generated method stub
 		System.out.println("ola git");
 //alterado no eclipse
+		// alterado no GIT
 	}
 
 }

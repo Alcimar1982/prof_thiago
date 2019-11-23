@@ -6,6 +6,7 @@ public class Red extends Color {
 	public void paint(Shape shape) {
 		System.out.println("pintei o " + shape + " de Vermelho");
 		
+		
 	}
 	
 

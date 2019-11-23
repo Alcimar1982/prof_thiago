@@ -13,6 +13,8 @@ public class Square extends Shape {
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "Quadrado";
+				
+		
 	}
 
 

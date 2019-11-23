@@ -3,6 +3,7 @@ package projeto.bridge;
 public abstract class Shape {
 	private Color color;
 	
+	
 	public Color getColor() {
 		return color;
 	}

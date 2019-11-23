@@ -24,7 +24,9 @@ public class Facade implements IFacade {
 	@Override
 	public Hotel cadastrahotHotel(String nome, String endereco, EnumCafeManha cafeManha, EnumClasseHotel classe) {
 		// TODO Auto-generated method stub
-		return 
+		return ControladorHotel.getInstance().cadastrahotHotel(nome, endereco, cafeManha, classe);
+				
+				
 	}
 
 	@Override

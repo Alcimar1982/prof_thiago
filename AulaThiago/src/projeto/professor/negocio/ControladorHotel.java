@@ -18,20 +18,22 @@ public class ControladorHotel {
 	}
 
 	public Hotel cadastrahotHotel(String nome, String endereco, EnumCafeManha cafeManha, EnumClasseHotel classe) {
+		IFabricaClasse fabricaClasse = null;
+		
 		if (classe == EnumClasseHotel.BUDGET) {
-			IFabricaClasse fabricaClasse = new FabricaClasseBudget();
-			Hotel hotel = fabricaClasse.criarHotel(nome, endereco);
+			fabricaClasse = new FabricaClasseBudget();
+						 
 		} 
 		else if (classe == EnumClasseHotel.CLASSIC) {
-			IFabricaClasse fabricaClasse = new FabricaClasseClassic();
-			Hotel hotel = fabricaClasse.criarHotel(nome, endereco);
+			fabricaClasse = new FabricaClasseClassic();
+						
 		}
 
 		else if (classe == EnumClasseHotel.APART) {
-			IFabricaClasse fabricaClasse = new FabricaClasseApart();
-			Hotel hotel = fabricaClasse.criarHotel(nome, endereco);
+			fabricaClasse = new FabricaClasseApart();
+					
 		}
-
+		Hotel hotel = fabricaClasse.criarHotel(nome, endereco);
 
 		return hotel; 
 	}

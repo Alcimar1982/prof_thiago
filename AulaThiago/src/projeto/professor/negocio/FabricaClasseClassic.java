@@ -1,4 +1,4 @@
-package projeto.liberty.camadas.negocio.modelo;
+package projeto.professor.negocio;
 
 public class FabricaClasseClassic implements IFabricaClasse {
 

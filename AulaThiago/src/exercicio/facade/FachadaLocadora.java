@@ -12,6 +12,7 @@ public class FachadaLocadora implements IFachada{
 		Cliente cliente = new Cliente();
 		repositoriCliente.cadastrarCliente(cliente);
 		return cliente;
+		
 	}
 
 	@Override

@@ -18,6 +18,13 @@ public class ControladorHotel {
 	}
 
 	public Hotel cadastrahotHotel(String nome, String endereco, EnumCafeManha cafeManha, EnumClasseHotel classe) {
+		IFabricaClasse fabricaClasse = getFabricaClasse(classe);
+		Hotel hotel = fabricaClasse.criarHotel(nome, endereco);
+
+		return hotel; 
+	}
+
+	private IFabricaClasse getFabricaClasse(EnumClasseHotel classe) {
 		IFabricaClasse fabricaClasse = null;
 		
 		if (classe == EnumClasseHotel.BUDGET) {
@@ -33,9 +40,16 @@ public class ControladorHotel {
 			fabricaClasse = new FabricaClasseApart();
 					
 		}
-		Hotel hotel = fabricaClasse.criarHotel(nome, endereco);
+		return fabricaClasse;
+	}
+	
+	public Quarto cadastraQuarto(Hotel hotel,Integer numero, Integer limHospedes, Boolean ehFumante, Double valor, String descricao,
+			EnumTipoQuarto tipoQuarto) {
 
-		return hotel; 
+		IFabricaClasse fabricaClasse = getFabricaClasse(hotel.getClasse());
+		
+		Quarto quarto = fabricaClasse.criarQuarto(numero, limHospedes, ehFumante, valor, descricao, tipoQuarto);
+		return quarto; 
 	}
 
 

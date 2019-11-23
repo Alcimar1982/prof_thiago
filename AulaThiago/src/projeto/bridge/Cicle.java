@@ -12,5 +12,4 @@ public class Cicle extends Shape {
 		return "Circulo";
 	}
 
-
 }

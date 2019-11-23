@@ -15,4 +15,5 @@ public class FabricaClasseClassic implements IFabricaClasse {
 		return new QuartoClassic(numero, limHospedes, ehFumante, valor, descricao, tipoQuarto);
 	}
 
+	
 }

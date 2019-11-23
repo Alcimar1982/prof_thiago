@@ -8,6 +8,7 @@ public class HotelClassic extends Hotel {
 		
 		this.getComodidades().add(EnumComodidade.ACADEMIA);
 		this.getComodidades().add(EnumComodidade.ESTACIONAMENTO);
+		
 	}
 
 }

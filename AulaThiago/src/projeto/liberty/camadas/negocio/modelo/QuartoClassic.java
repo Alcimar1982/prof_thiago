@@ -10,6 +10,7 @@ public class QuartoClassic extends Quarto {
 		this.getItensQuarto().add(EnumItemQuarto.CAMA);
 		this.getItensQuarto().add(EnumItemQuarto.TV);
 		this.getItensQuarto().add(EnumItemQuarto.FRIGOBAR);
+		
 	}
 
 }
